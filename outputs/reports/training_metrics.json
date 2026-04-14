@@ -1,0 +1,44 @@
+{
+  "isolation_forest": {
+    "accuracy": 0.867
+  },
+  "binary_rf": {
+    "accuracy": 0.9998,
+    "auc_roc": 1.0,
+    "f1_attack": 0.9997500624843789
+  },
+  "multiclass_rf": {
+    "accuracy": 1.0
+  },
+  "feature_importance": {
+    "idle_mean": 0.19274983680748656,
+    "pkt_len_mean": 0.1231447163035771,
+    "active_mean": 0.1206782169128461,
+    "bwd_iat_mean": 0.10173777372296215,
+    "pkt_len_std": 0.0744457378974381,
+    "flow_duration": 0.07320594107282294,
+    "dst_port": 0.06585855852613606,
+    "flow_pkts_per_sec": 0.046107008654615436,
+    "bytes_per_packet": 0.04314806248979085,
+    "fwd_iat_mean": 0.02840882354275884,
+    "fwd_bytes": 0.027436936229072516,
+    "bwd_bytes": 0.026720766405935903,
+    "ack_flag_count": 0.013373437655750447,
+    "flow_bytes_per_sec": 0.013052822469050566,
+    "psh_flag_count": 0.010956446686323599
+  },
+  "train_samples": 40000,
+  "test_samples": 10000,
+  "n_features": 27,
+  "class_names": [
+    "BENIGN",
+    "BotNet",
+    "BruteForce",
+    "DDoS",
+    "DoS",
+    "Infiltration",
+    "PortScan",
+    "SQLInjection",
+    "XSS"
+  ]
+}
